@@ -5,15 +5,16 @@ var userClickedPattern = [];
 var gamePattern = [];
 var started = false;
 var level = 0;
-
+$(document).keypress(startGame);
+$(document).ontouchstart(startGame);
 // To start the game
-$(document).keypress(function(){
+function startGame(){
   if(!started){
     $("#level-title").text("Level"+level);
     nextSequence();
     started = true;
   }
-});
+};
 
 
 //To set the Sequence

@@ -6,7 +6,6 @@ var gamePattern = [];
 var started = false;
 var level = 0;
 $(document).keypress(startGame);
-$(document).ontouchstart(startGame);
 // To start the game
 function startGame(){
   if(!started){
